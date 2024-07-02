@@ -1,18 +1,11 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: hasan
-  Date: 6/29/2024
-  Time: 12:00 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>OSS</title>
-    <link rel="stylesheet" href="res/FirstPage.css">
+    <title>GULLIVER</title>
+    <link rel="stylesheet" href="front/css/FirstPage.css">
 </head>
 <body>
-<form method="post">
+<form method="post" id="form">
     <%if (request.getMethod().equals("GET")) {%>
     <div>
         <label for="username">Username : </label>
@@ -23,6 +16,7 @@
         <input type="password" name="password" id="password">
     </div>
     <div>
+        <button class="sign" onclick="window.location.href='SignUp.jsp'">Sign Up</button>
         <button name="sub" type="submit">Submit</button>
     </div>
     <%}%>
